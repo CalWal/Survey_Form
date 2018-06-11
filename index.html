@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Coffee Survey form</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+<h1 id="title">What Is The Best Way To Drink Coffee?</h1>
+<p id="description">
+  Help me find what the best way to drink coffee is.
+</p>
+
+<form id="survey-form">
+<div class="questions">
+    <div class="label">
+    <label id="name-label" for="name"> * Name: </label>
+    </div>
+<div class="answer">
+      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter Your Name"  required/>
+     </div>
+  </div>
+
+<div class="questions">
+    <div class="label">
+    <label id="email-label" for="email"> * Email:  </label>
+</div>
+
+    <div class="answer">
+      <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter Your Email" required />
+     </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+    <label id="number-label" for="age"> * Age:  </label>
+</div>
+
+    <div class="answer">
+  <input type="number" min="0" max="150" value="25" size="25 "name="age" id="number" class="input-field" placeholder="How Old Are You?" required />
+</div>
+  </div>
+
+
+  <div class="questions">
+    <div class="label">
+    <label id="amount-label"> How Much Coffee Do You Consume In A Day?  </label>
+  </div>
+
+    <div class="answer">
+      <select id="dropdown" name="amount" class="dropdown">
+        <option disabled value>
+          Select An Option
+        </option>
+        <option value="light-consumer">
+          0-1 Cups
+        </option>
+        <option value="average-consumer">
+          2-3 Cups
+        </option>
+        <option value="heavy-consumer">
+          Over 3 Cups
+        </option>
+        <option value="no-answer">
+          Prefer Not To Say
+        </option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="questions">
+    <div class="label">
+    <label for="milk"> * How Often Do You Add Milk To Your Coffee?  </label>
+</div>
+
+    <div class="answer">
+    <label>Always</label>
+    <input name="milk"class="milk "type="radio" value="1"/>
+    <label>Sometimes</label>
+    <input name="milk"class="milk "type="radio" value="2"/>
+    <label>Never</label>
+    <input name="milk" class="milk "type="radio" value="3"/>
+
+  </div>
+
+  </div>
+
+
+  <div class="questions">
+    <div class="label">
+    <label for="coffee-type"> What Style of Coffee Do You Like To Drink? </label>
+  </div>
+
+    <div class="answer"> </div>
+    <ul id="coffee-type" style="list-style: none">
+      <li class="checkbox">
+      <label>
+        <input name="coffee" value="1" type="checkbox" />
+        Cappuccino
+      </label>
+       </li>
+       <li class="checkbox">
+       <label>
+         <input name="coffee" value="2" type="checkbox" />
+         Latte
+       </label>
+        </li>
+        <li class="checkbox">
+        <label>
+          <input name="coffee" value="3" type="checkbox" />
+          Flat White
+        </label>
+        <li class="checkbox">
+        <label>
+          <input name="coffee" value="4" type="checkbox" />
+          Mocha
+        </label>
+         </li>
+         </li>
+         <li class="checkbox">
+         <label>
+           <input name="coffee" value="5" type="checkbox" />
+           Long Black
+         </label>
+          </li>
+          <li class="checkbox">
+          <label>
+            <input name="coffee" value="6" type="checkbox" />
+          Short Black
+          </label>
+           </li>
+           <li class="checkbox">
+           <label>
+             <input name="coffee" value="7" type="checkbox" />
+             Espresso Shot
+           </label>
+            </li>
+            <li class="checkbox">
+            <label>
+              <input name="coffee" value="8" type="checkbox" />
+              Piccolo
+            </label>
+             </li>
+
+    </ul>
+  </div>
+
+
+  <div class="questions">
+    <div class="label">
+    <label for="comments"> Is there anything else you would like to add about coffee?  </label>
+</div>
+
+    <div class="answer">
+      <textarea id="comments" class="input-field" name="comments" placeholder="Enter your comments here..." style="height 50px; resize: vertical;"></textarea>
+    </div>
+  </div>
+
+  <button id="submit" type="submit">Submit</button>
+
+
+
+</form>
+</body>
+</html>
